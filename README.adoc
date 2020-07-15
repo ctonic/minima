@@ -1,0 +1,3 @@
+= README
+
+- To process liquid templates (e.g. `{% include my-themes-great-include.html %}`) inside asciidoc files / passthrough-blocks, you need to have `:page-liquid:` in the header
