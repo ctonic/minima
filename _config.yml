@@ -61,3 +61,6 @@ plugins:
  - jekyll-seo-tag
 
 # --- asciidoc stuff ---
+exclude:
+  - README.adoc
+  - MINIMA_README.md
