@@ -5,6 +5,8 @@ This is a conversion of the popular https://github.com/jekyll/minima[minima] the
 
 It uses the https://github.com/asciidoctor/jekyll-asciidoc[Jekyll AsciiDoc Plugin].
 
+If you find more things where the minima code has to be expanded to cover Asciidoctor output, please submit an issue or pull request here.
+
 == Tasks
 * [x] Convert the markdown files to ´adoc´
 * [x] Add syntax highlighting
