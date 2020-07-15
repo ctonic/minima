@@ -1,0 +1,47 @@
+// copying style stuff:
+// @extend #{'.my-class', '.my-other-class'};
+// or
+// @extend .myclass; in body
+
+// Asciidoctor likes to add <p> everywhere
+ul p, ol p, td p {
+    margin: 0;
+    padding: 0;
+}
+
+#toctitle {
+    @extend h2;
+}
+
+.toggle-toc .toc {
+    max-width: calc(#{$content-width} - (#{$spacing-unit}));
+    @media screen and (min-width: calc(#{$content-width} + 2*#{$sidebar-width} )) {
+        display: none;
+    }
+}
+
+.toc-sidebar {
+    display: none;
+    @media screen and (min-width: calc(#{$content-width} + 2*#{$sidebar-width} )) { // + 2*#{$spacing-unit}
+        margin-top: 2*$spacing-unit;
+        width: $sidebar-width - 2*$spacing-unit; // calc(#{$sidebar-width});
+        padding-right: 2*$spacing-unit;
+        display: block;
+        position: fixed;
+        float: right;
+        overflow: auto;
+        right: 50%;
+        margin-right: $content-width / 2 - $spacing-unit;
+    }
+}
+
+// if screen big enough: put toc on the left side and keep it fixed
+
+// screen too small: make sidebar a topbar
+
+
+// @media screen and (min-width: $on-large) {
+//   max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+//   padding-right: $spacing-unit;
+//   padding-left: $spacing-unit;
+// }

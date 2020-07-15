@@ -10,7 +10,7 @@ If you find more things where the minima code has to be expanded to cover Asciid
 == Tasks
 * [x] Convert the markdown files to ´adoc´
 * [x] Add syntax highlighting
-* [ ] Integrate the table of content created by AsciiDoc in the sidebar for posts (if there is enough space)
+* [x] Integrate the table of content created by AsciiDoc in the sidebar for posts (if there is enough space)
 
 == Making passthrough blocks work
 To process liquid templates (e.g. `{% include my-themes-great-include.html %}`) inside asciidoc files / passthrough-blocks, you need to have `:page-liquid:` in the header
@@ -19,6 +19,15 @@ To process liquid templates (e.g. `{% include my-themes-great-include.html %}`) 
 The default way to do source code highlighting in Jekyll is by using Rouge (instead of pygments)
 You can add highlighting into a page by simply setting `:page-liquid:` at the top of the correct asciidoc page.
 The `scss` already contains definitions for the colors.
+
+== Sidebar Table of Contents
+This theme can integrate the table of contents that can be generated with asciidoc in a sidebar.
+When there is enough space on the left side, a sidebar with the table of contents will be displayed.
+If there is not enough space on the side, it will be moved under the page title.
+
+To use this feature in a page, set the following two attributes to true:
+- `:toc:`
+- `:page-toc:`
 
 == CI with GitHub actions
 AsciiDoc files cannot directly be published by GitHub pages because the Jekyll plugin `jekyll-asciidoc` is https://webapps.stackexchange.com/questions/114606/can-github-pages-render-asciidoc[not whitelisted].

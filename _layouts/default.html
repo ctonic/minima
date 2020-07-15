@@ -6,11 +6,25 @@
   <body>
 
     {%- include header.html -%}
-
+    
     <main class="page-content" aria-label="Content">
+
+      {% if page.toc %}
+      <div class="toggle-toc">
+        <div class="toc-sidebar">
+          <h2>Table of Contents</h2>
+          {{ page.document | tocify_asciidoc }}
+        </div>
+      {%- endif -%}
+
       <div class="wrapper">
         {{ content }}
       </div>
+
+      {% if page.toc %}
+      </div>
+      {% endif %}
+
     </main>
 
     {%- include footer.html -%}

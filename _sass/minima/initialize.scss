@@ -41,11 +41,20 @@ $on-large:         $on-laptop !default;
   font-size: #{$ratio}rem;
 }
 
+
+// minima-asciidoc variables
+$sidebar-width:     320px !default;
+
+
+// minima-asciidoc
+
+
+
 // Import pre-styling-overrides hook and style-partials.
 @import
   "minima/custom-variables", // Hook to override predefined variables.
   "minima/base",             // Defines element resets.
   "minima/layout",           // Defines structure and style based on CSS selectors.
-  "minima/asciidoc_fixes",   // Fixes layout errors due to the differences in asciidoctor's and Jekyll's HTML output
+  "minima/asciidoc",         // Fixes layout errors due to the differences in asciidoctor's and Jekyll's HTML output
   "minima/custom-styles"     // Hook to override existing styles.
 ;
