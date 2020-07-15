@@ -12,3 +12,12 @@ To process liquid templates (e.g. `{% include my-themes-great-include.html %}`) 
 The default way to do source code highlighting in Jekyll is by using Rouge (instead of pygments)
 You can add highlighting into a page by simply setting `:page-liquid:` at the top of the correct asciidoc page.
 The `scss` already contains definitions for the colors.
+
+== CI with GitHub actions
+AsciiDoc files cannot directly be published by GitHub pages because the Jekyll plugin `jekyll-asciidoc` is https://webapps.stackexchange.com/questions/114606/can-github-pages-render-asciidoc[not whitelisted].
+
+To publish to GitHub pages, Jekyll must render the HTML pages otherwise.
+
+One way is to use GitHub's own continuous integration platform GitHub pages.
+
+A good script for this can be found here: https://github.com/limjh16/jekyll-action-ts
