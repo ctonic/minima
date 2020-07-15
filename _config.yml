@@ -59,3 +59,5 @@ plugins:
  - jekyll-asciidoc
  - jekyll-feed
  - jekyll-seo-tag
+
+# --- asciidoc stuff ---

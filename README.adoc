@@ -1,3 +1,9 @@
 = README
+:toc:
 
 - To process liquid templates (e.g. `{% include my-themes-great-include.html %}`) inside asciidoc files / passthrough-blocks, you need to have `:page-liquid:` in the header
+
+== Source code highlighting
+The default way to do source code highlighting in Jekyll is by using Rouge (instead of pygments)
+You can add highlighting into a page by simply setting `:page-liquid:` at the top of the correct asciidoc page.
+The `scss` already contains definitions for the colors.

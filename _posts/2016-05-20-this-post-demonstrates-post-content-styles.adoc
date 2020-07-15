@@ -4,6 +4,8 @@
 :page-categories: junk
 :page-author: Bart Simpson, Nelson Mandela Muntz
 :page-meta: "Springfield"
+:source-highlighter: rouge
+:page-liquid:
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
 
@@ -48,7 +50,6 @@ Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin con
   </body>
 </html>
 ----
-
 
 In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
 
