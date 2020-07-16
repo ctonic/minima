@@ -13,10 +13,12 @@ ul p, ol p, td p {
     @extend h2;
 }
 
-.toggle-toc .toc {
-    max-width: calc(#{$content-width} - (#{$spacing-unit}));
-    @media screen and (min-width: calc(#{$content-width} + 2*#{$sidebar-width} )) {
-        display: none;
+.toc-sidebar ~  .wrapper {
+    .toc {
+        max-width: calc(#{$content-width} - (#{$spacing-unit}));
+        @media screen and (min-width: calc(#{$content-width} + 2*#{$sidebar-width} )) {
+            display: none;
+        }
     }
 }
 
@@ -24,14 +26,22 @@ ul p, ol p, td p {
     display: none;
     @media screen and (min-width: calc(#{$content-width} + 2*#{$sidebar-width} )) { // + 2*#{$spacing-unit}
         margin-top: 2*$spacing-unit;
-        width: $sidebar-width - 2*$spacing-unit; // calc(#{$sidebar-width});
-        padding-right: 2*$spacing-unit;
+        // width: $sidebar-width - 2*$spacing-unit; // calc(#{$sidebar-width});
+        width: calc(50% - 0.5*#{$content-width} + #{$spacing-unit});
+        // margin-right: 2*$spacing-unit;
         display: block;
         position: fixed;
         float: right;
         overflow: auto;
-        right: 50%;
-        margin-right: $content-width / 2 - $spacing-unit;
+        // right: 50%;
+        // margin-right: $content-width / 2 - $spacing-unit;
+    }
+
+    .toc {
+        width: $sidebar-width;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
     }
 }
 
