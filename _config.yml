@@ -61,6 +61,8 @@ plugins:
  - jekyll-seo-tag
 
 # --- asciidoc stuff ---
+url: https://ctonic.github.io/jekyll-asciidoc
+
 exclude:
   - README.adoc
   - MINIMA_README.md
