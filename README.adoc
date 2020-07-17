@@ -33,7 +33,8 @@ To use this feature in a page, set the following two attributes to true:
 AsciiDoc files cannot directly be published by GitHub pages because the Jekyll plugin `jekyll-asciidoc` is https://webapps.stackexchange.com/questions/114606/can-github-pages-render-asciidoc[not whitelisted].
 
 To publish to GitHub pages, Jekyll must render the HTML pages otherwise.
-
 One way is to use GitHub's own continuous integration platform GitHub pages.
-
-A good script for this can be found here: https://github.com/limjh16/jekyll-action-ts
+The workflow in the `.github` directory of this repository demonstrates how this can be done.
+When using this workflow, make sure that you have a `gh-pages` branch.
+Also make sure that to also push the `Gemfile.lock` file to the source repository (can be created via `bundle install`).
+Here the list of operating systems in the `PLATFORMS` section of `Gemfile.lock` must contain the OS which is used for deployment (here `x86_64-linux`).
