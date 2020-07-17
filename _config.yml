@@ -61,7 +61,7 @@ plugins:
  - jekyll-seo-tag
 
 # --- asciidoc stuff ---
-baseurl: /minima-asciidoc/
+baseurl: "/minima-asciidoc"
 
 exclude:
   - README.adoc
