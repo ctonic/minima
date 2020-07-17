@@ -1,16 +1,15 @@
 = README
 :toc:
 
+NOTE: View the demo here: https://ctonic.github.io/minima-asciidoc/
+
 This is a conversion of the popular https://github.com/jekyll/minima[minima] theme for Jekyll to primarily use AsciiDoc source files (instead of Markdown).
-
 It uses the https://github.com/asciidoctor/jekyll-asciidoc[Jekyll AsciiDoc Plugin].
-
 If you find more things where the minima code has to be expanded to cover Asciidoctor output, please submit an issue or pull request here.
 
-== Tasks
-* [x] Convert the markdown files to ´adoc´
-* [x] Add syntax highlighting
-* [x] Integrate the table of content created by AsciiDoc in the sidebar for posts (if there is enough space)
+== Additions to https://github.com/jekyll/minima[minima]
+- support for AsciiDoc files as source
+- dynamic integration of the table of contents that can be created by AsciiDoctor, see https://ctonic.github.io/minima-asciidoc/junk/2016/05/20/this-post-demonstrates-post-content-styles.html[this page for example]; if the screen is wide enough the table of contents can be integrated static into the sidebar, otherwise it appears at its default position at the top of the post
 
 == Making passthrough blocks work
 To process liquid templates (e.g. `{% include my-themes-great-include.html %}`) inside asciidoc files / passthrough-blocks, you need to have `:page-liquid:` in the header
