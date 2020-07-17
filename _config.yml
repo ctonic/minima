@@ -60,7 +60,9 @@ plugins:
  - jekyll-feed
  - jekyll-seo-tag
 
-# --- asciidoc stuff ---
+# baseurl sets the root of the published site
+# it is used together with the Jekyll filter relative_url
+# required here for the demo site on GitHub
 baseurl: "/minima-asciidoc"
 
 exclude:
